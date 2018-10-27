@@ -1,0 +1,9 @@
+ef inverter(s):
+    if len(s) == 1:
+        return s
+    elif len(s) > 1:
+        return inverter(s[1:]) + s[0]
+
+    N = int(input())
+    for i in range(N):
+        print(inverter(input()))
